@@ -1,0 +1,136 @@
+ body {
+      font-family: Impact, 'Arial Narrow Bold', sans-serif;
+      background: #cbe9eb;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    h1 {
+      letter-spacing: 10px;
+      color: #2c3e3f;
+    }
+    .container {
+      display: flex;
+      background: #fff;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      gap: 30px;
+    }
+    .left, .right {
+      padding: 20px;
+    }
+    .left {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 300px;
+    }
+    input[type="number"], input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 2px solid #bdeaea;
+      font-size: 18px;
+      text-align: right;
+    }
+    .tip-buttons {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+    .tip-buttons button, .tip-buttons input[type="text"] {
+      padding: 10px;
+      font-size: 18px;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+    }
+    .tip-buttons button {
+      background: #00494d;
+      color: white;
+    }
+    .tip-buttons button.active {
+      background: #9fe8df;
+      color: #00494d;
+    }
+    .people-input {
+      display: flex;
+      align-items: center;
+      border: 2px solid #00494d;
+      border-radius: 5px;
+      padding: 10px;
+      justify-content: space-between;
+    }
+    .people-input input {
+      border: none;
+      outline: none;
+      font-size: 18px;
+      text-align: right;
+      flex: 1;
+    }
+
+    .people-input span {
+      color: #00494d;
+      font-size: 12px;
+      margin-left: 10px;
+    }
+    
+    .right {
+      background: #00494d;
+      color: #9fe8df;
+      border-radius: 10px;
+      padding: 30px 20px;
+      width: 250px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .result {
+      margin-bottom: 30px;
+    }
+    .result p {
+      display: flex;
+      justify-content: space-between;
+      font-size: 18px;
+    }
+    .result p span:last-child {
+      font-size: 24px;
+    }
+    .reset-btn {
+      padding: 10px;
+      font-size: 18px;
+      background: #9fe8df;
+      color: #00494d;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+  @media screen and (max-width: 768px){
+  body{
+    height: auto;
+    padding: 20px;
+  }
+
+  .card {
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .result-section{
+    padding: 20px;
+  }
+
+  .amount h2 {
+    font-size: 24px;
+  }
+
+  .tip-options {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  }
